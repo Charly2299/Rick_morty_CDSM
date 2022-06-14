@@ -1,0 +1,197 @@
+:root{
+
+  --principal-color: rgb(4, 36, 33);
+  --secondary-color: rgb(2, 15, 14);
+  --letter-color:white;
+  --tittle-color:yellow
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Bebas Neue', cursive;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+ scrollbar-color: white;
+ background-color: var(--principal-color);
+ 
+  /* background-image: url(./assets/img/nubes.png);
+ 
+  background-repeat: no-repeat;
+  background-size:cover */
+
+}
+
+*, 
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+button, span,body{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.header__contain{
+min-height:100vh ;
+
+  background-image: url('./assets/img/header.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+padding-bottom:  20px;
+
+}
+
+.header-content{
+width: 90%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.header-content input{
+width: 60%;
+height: 30px;
+border-radius: 5px;
+border: none;
+color: var(--letter-color);
+background-color: var(--principal-color);
+}
+
+.header-content button{
+width: 20%;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color:  var(--secondary-color);
+  color: var(--tittle-color);
+}
+
+.header-content button:active{
+  transform: scale(1.05);
+}
+
+
+  
+
+
+.location__container{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-content{
+  width: 80vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+.location-tittle{
+  color: var(--tittle-color);
+}
+
+.location-txt{
+color: var(--letter-color);
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+.cards{
+
+  display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+
+flex-wrap: wrap;
+}
+
+
+.card-content{
+background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.card-content h2{
+  color: var(--tittle-color);
+
+}
+
+.card-content p{
+  color: var(--letter-color);
+}
+
+
+
+
+.card__container{
+
+  margin-bottom: 20px;
+}
+
+.card-img{
+
+  position: relative;
+    display: inline-block;
+}
+
+.card-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-txt h2{
+  display: flex;
+
+  justify-content: center;
+
+  margin-bottom: 10px;
+}
+
+.status{
+  position: absolute;
+  top: 5px;
+    left: 0px;
+    background-color: var(--secondary-color);
+border-bottom-right-radius:   5px;
+border-top-right-radius:5px ;
+}
+
+.Dead p{
+  color: red;
+  
+}
+
+.Alive p{
+color: green;
+
+}
+
+.unknown p{
+  color: yellow;
+
+}
+
+.status p{
+  margin: 0;
+}
